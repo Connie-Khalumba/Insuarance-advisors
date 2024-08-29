@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Health Insurance Plans</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/Blue_Pink_Badge_Simple_Medical_Clinic_Logo-removebg-preview.png" sizes="16x16 32x32 48x48" type="image/x-icon">
+
+    <!-- Box Icon Link for Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+        window.formbutton =
+            window.formbutton ||
+            function () {
+                (formbutton.q = formbutton.q || []).push(arguments);
+            };
+        formbutton("create", {
+            action: "https://formspree.io/f/xoqgglne",
+    title: "How can we help?",
+    fields: [
+      {
+        type: "email",
+        label: "Email:",
+        name: "email",
+        required: true,
+        placeholder: "your@email.com",
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" },
+    ],
+    styles: {
+      title: {
+        backgroundColor: "rgb(9, 118, 133)",
+      },
+      button: {
+        backgroundColor: "rgb(9, 118, 133)",
+      },
+    },
+  });
+</script>
+</head>
+
+<body>
+    <section id="Homepage">
+        <section class="navbar">
+          <div class="navbar-logo">
+            <img src="./assets/Blue_Pink_Badge_Simple_Medical_Clinic_Logo-removebg-preview.png" alt="Logo" class="logo" />
+          </div>
+  
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+    
+          <div class="navlinks hide">
+            <a href="./index.html">Home</a>
+            <a href="./compare.html">Insurance packages</a>
+            <a href="./plans.html">Plans</a>
+            <a href="./contact.html">Contact Us</a>
+           <a href="./signup.html" class="button-link">Sign up</a>
+          </div>
+        </section>
+        <input type="text" placeholder="Search plans...">
+    </section>
+
+    <main>
+        <!-- Carousel Start -->
+   
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HealthCare Plans. All rights reserved.</p>
+    </footer>
+
+    <script src="firebase-config.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
+
+    
+    
