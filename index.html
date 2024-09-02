@@ -1,92 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Health Insurance Plans</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="./assets/Blue_Pink_Badge_Simple_Medical_Clinic_Logo-removebg-preview.png" sizes="16x16 32x32 48x48" type="image/x-icon">
-
-    <!-- Box Icon Link for Icons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-    <script>
-        window.formbutton =
-            window.formbutton ||
-            function () {
-                (formbutton.q = formbutton.q || []).push(arguments);
-            };
-        formbutton("create", {
-            action: "https://formspree.io/f/xoqgglne",
-    title: "How can we help?",
-    fields: [
-      {
-        type: "email",
-        label: "Email:",
-        name: "email",
-        required: true,
-        placeholder: "your@email.com",
-      },
-      {
-        type: "textarea",
-        label: "Message:",
-        name: "message",
-        placeholder: "What's on your mind?",
-      },
-      { type: "submit" },
-    ],
-    styles: {
-      title: {
-        backgroundColor: "rgb(9, 118, 133)",
-      },
-      button: {
-        backgroundColor: "rgb(9, 118, 133)",
-      },
-    },
-  });
-</script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="contact.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>HEALTH INSURANCE PLAN</title>
 </head>
 
 <body>
-    <section id="Homepage">
-        <section class="navbar">
-          <div class="navbar-logo">
-            <img src="./assets/Blue_Pink_Badge_Simple_Medical_Clinic_Logo-removebg-preview.png" alt="Logo" class="logo" />
-          </div>
-  
-          <div class="hamburger">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </div>
-    
-          <div class="navlinks hide">
-            <a href="./index.html">Home</a>
-            <a href="./compare.html">Insurance packages</a>
-            <a href="./plans.html">Plans</a>
-            <a href="./contact.html">Contact Us</a>
-           <a href="./signup.html" class="button-link">Sign up</a>
-          </div>
-        </section>
-        <input type="text" placeholder="Search plans...">
-    </section>
+    <header>
+        <nav class="nav">
+            <a href="/index.html">
+                <img style="width: 100px; height: 70px;" src="./assets/Blue_Pink_Badge_Simple_Medical_Clinic_Logo-removebg-preview.png" alt="">
+            </a>
 
-    <main>
-        <!-- Carousel Start -->
-   
-    </main>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
 
-    <footer>
-        <p>&copy; 2024 HealthCare Plans. All rights reserved.</p>
+            <div class="nav__link hide">
+                <a href="./index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./plans.html">Plans</a>
+                <a href="./signup.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="hero-section">
+            <article class="hero-section_left">
+                <button type="button">Simple Task Management Tool</button>
+                <h1>Manage your stask with PLP</h1> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam eum eligendi iusto earum quaerat animi quae dolores cum necessitatibus perferendis?</p>
+
+                <div class="get-started">
+                    <a href="./signUp.html">
+                        <button type="button">Get Started</button>
+                    </a>
+                    <span class="how-works">
+                  <button type="button">Watch how it works</button>
+                </span>
+                </div>
+
+            </article>
+            <article class="hero-section_right">
+                <img src="/images/image3.png" alt="">
+            </article>
+        </div>
+
+        <div class="main-content">
+            <div class="sub-title">
+                <h1>Here is what you can expect</h1> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quaerat et facilis minima dolorum ipsum commodi expedita nihil ratione ut, obcaecati fugiat fugit!</p>
+            </div>
+
+            <section class="main-content_cards">
+                <div class="card">
+                    <i class="fa fa-home"></i>
+                    <h1>Here is what you can expec</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quaerat et facilis minima dolorum ipsum commodi expedita nihil ratione ut, obcaecati fugiat fugit!</p>
+                </div>
+                <div class="card">
+                    <i class="fa fa-mobile"></i>
+                    <h1>Here is what you can expec</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quaerat et facilis minima dolorum ipsum commodi expedita nihil ratione ut, obcaecati fugiat fugit!</p>
+                </div>
+                <div class="card">
+                    <i class="fa fa-envelope-open"></i>
+                    <h1>Here is what you can expec</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quaerat et facilis minima dolorum ipsum commodi expedita nihil ratione ut, obcaecati fugiat fugit!</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <ul class="social_icons">
+            <!-- social media icons -->
+            <li class="list">
+                <a class="icon" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li class="list">
+                <a class="icon" href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    </ion-icon>
+                </a>
+            </li>
+            <li class="list">
+                <a class="icon" href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+            <li class="list">
+                <a class="icon" href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <!-- home page, about page,contact page and login page -->
+        <ul class="menu">
+            <li class="menu_icons">
+                <a class="tag" href="index.html">Home</a>
+            </li>
+            <li class="menu_icons">
+                <a class="tag" href="about.html">About</a>
+            </li>
+            <li class="menu_icons">
+                <a class="tag" href="contact.html">Contact</a>
+            </li>
+            <li class="menu_icons">
+                <a class="tag" href="signUp.html">Login</a>
+            </li>
+        </ul>
+        <div class="footer-bottom">
+            <!-- copyright section -->
+            <p>copyright&copy;2023 Taskmanagementsystem. designed by <span>web team</span></p>
+        </div>
     </footer>
-
-    <script src="firebase-config.js"></script>
-    <script src="./main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-</html>
 
-    
-    
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Healthcare survey</title>
+    <link rel="stylesheet" href="survey.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="/index.html">
+                <img style="width: 100px; height: 70px;" src="./assets/Blue_Pink_Badge_Simple_Medical_Clinic_Logo-removebg-preview.png" alt="">
+            </a>
+
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+
+            <div class="nav__link hide">
+                <a href="./index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./plans.html">Plans</a>
+                <a href="./signup.html">Login</a>
+            </div>
+        </nav>
+    </header>
+    <div id="main">
+        
+        <main>
+                <h1 id="title">Healthcare survey</h1>
+                <p id="description">This questionnaire will help to look into the levels of service you received in health care. Please take the time to give your honest opinion on each of the questions, as this will help us to drive an improvement in service.</p>
+                <form id= "survey-form" action=" /url-where-you-want-to-submit-form-data">
+                    <div class="questions">
+                        <label for="name"  id="name-label">Name</label>
+                        <input type="text" class="long-bars" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="questions">
+                        <label for="email" id="email-label">E-mail</label>
+                        <input type="email" class="long-bars" id="email" placeholder="Enter your e-mail" required>
+                    </div>
+                    <div class="questions">
+                        <label for="number" id="number-label">Age (optional)</label>
+                        <input type="number" class="long-bars" id="number" placeholder="Enter your age" min="18" max="124">
+                    </div>
+                    <div class="questions">
+                        <p>Which option best describes your current role?</p>
+                        <select name="job" class="long-bars" id="dropdown">
+                            <option disabled selected value>Select current role</option>
+                            <option value="fulltime">Full time job</option>
+                            <option value="parttime">Part time job</option>
+                            <option value="noinfo">Prefer not to say</option>
+                        </select>
+                    </div>
+                    <div class="questions">
+                            <p>Do you currenctly have health insuarance?</p>
+                            <label>
+                                <input value="insuarance-yes" type="radio" name="insuarance">Yes, I do
+                            </label>
+                            <label>
+                                <input value="insuarance-no" type="radio" name="insuarance">No, I don't
+                            </label>
+                    </div>
+                    <div class="questions">
+                        <label for="expenses">How much money, in Kenyan shillings, do you spend on healthcare in a typical month?</label>
+                        <input type="number" class="long-bars" id="expenses" required>
+                    </div>
+                    <div class="questions">
+                        <p>Who pays for your health insurance? (Check all that apply)</p>
+                        <label>
+                            <input type="checkbox" value="pay-loc-gov" name="whopays">Local government
+                        </label>
+                        <label>
+                            <input type="checkbox" value="pay-state-gov">State government
+                        </label>
+                        <label>
+                            <input type="checkbox" value="cur-emp">Current employer
+                        </label>
+                        <label>
+                            <input type="checkbox" value="form-emp">Former employer
+                        </label>
+                    </div>
+                    <div class="questions">
+                        <p>In the last 12 months, has a lack of money kept you from going to the doctor, or not?</p>
+                        <label>
+                            <input type="radio" value="doctor-yes" name="doctor">Yes, I do
+                        </label>
+                        <label>  
+                            <input type="radio" value="doctor-no" name="doctor">No, I don't
+                        </label>  
+                    </div>
+                    <div class="comment">
+                        <p>Do you have ideas, comments or suggestions?</p>
+                        <textarea placeholder="Remember, be nice!" name="customer-comment" id="text" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+        </main>
+    </div>
+        <footer>
+            <em>This survey was created by Ihor Nahnybida for freecodecamp's "Survey form" project</em>
+        </footer>
+</body>
+</html>

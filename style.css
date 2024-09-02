@@ -1,80 +1,277 @@
-/*** Carousel Hero Header Start ***/
-.header-carousel .header-carousel-item {
-    height: 700px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.header-carousel .owl-nav .owl-prev,
-.header-carousel .owl-nav .owl-next {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border-radius: 60px;
-    background: var(--bs-light);
-    color: var(--bs-primary);
-    font-size: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.5s;
+body {
+    font-family: sans-serif;
 }
 
-.header-carousel .owl-nav .owl-prev {
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-left: 30px;
-}
-.header-carousel .owl-nav .owl-next {
-    bottom: 30px;
-    right: 50%;
-    transform: translateX(-50%);
-    margin-right: 30px;
-}
-
-.header-carousel .owl-nav .owl-prev:hover,
-.header-carousel .owl-nav .owl-next:hover {
-    box-shadow: inset 0 0 100px 0 var(--bs-secondary);
-    color: var(--bs-white);
-}
-
-.header-carousel .header-carousel-item .carousel-caption {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+header {
+    background-color: #01a2a8;
+    position: fixed;
+    top: 0;
     left: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, .2);
+    right: 0;
+    z-index: 1;
+    /* padding: 1rem 2rem; */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+}
+
+
+/* nav styles */
+
+.nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.nav__link {
+    position: fixed;
+    width: 100%;
+    top: 5.5rem;
+    background-color: #01a2a8;
+}
+
+.nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav__link a:hover {
+    color: #0c2344;
+}
+
+.hide {
+    display: none;
+}
+
+
+/******************************************************/
+
+
+/************** Hero Section Styles *******************/
+
+
+/******************************************************/
+
+.main::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    filter: blur(90px);
+    height: 100%;
+    background: url(./assets/health-medical-insurance-illustration-concept-isolated-people-patients-doctors_109722-583.avif) no-repeat center;
+    background-size: cover;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    height: 70vh;
+}
+
+.hero-section_left {
+    margin-left: 10px;
+    margin-top: 4rem;
+    border-radius: 20px;
+    /* background-color: red; */
+    padding: 20px;
+}
+
+.hero-section_left>button {
+    background-color: #01a2a8;
+    padding: 0.8rem 1.5rem;
+    border-radius: 9999px;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+.hero-section_left>h1 {
+    /* background-color: #01a2a8;
+   */
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.hero-section_left>p {
+    width: 60%;
+    line-height: 1.9rem;
+}
+
+.get-started {
+    margin-top: 2.5rem;
     display: flex;
     align-items: center;
+    gap: 3rem;
 }
 
-@media (max-width: 991px) {
-    .header-carousel .header-carousel-item .carousel-caption {
-        padding-top: 45px;
-    }
+.get-started>a>button,
+.how-works>button {
+    background-color: #01a2a8;
+    padding: 0.8rem 1.5rem;
+    border-radius: 9999px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
 
-    .header-carousel .header-carousel-item {
-        height: 1300px;
+.get-started>a>button:hover,
+.how-works>button:hover {
+    background-color: white;
+    color: #01a2a8;
+    font-weight: 600;
+    border: 1px solid #01a2a8;
+}
+
+.hero-section_right {
+    width: 50%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.hero-section_right img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.main-content > h1 {
+    text-align: center;
+    color: #01a2a8;
+    font-weight: bold;
+}
+
+.main-content > p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.main-content_cards {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.main-content_cards>div>h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.main-content_cards>div>p {
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.main-content_cards>div>.fa-home,
+.fa-mobile,
+.fa-envelope-open {
+    font-size: 2rem;
+    margin: auto;
+    color: #01a2a8;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    /* margin: 2rem; */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* width: auto; */
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.card:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+    background-color: #881697;
+    color: white;
+}
+
+@media screen and (min-width: 600px) {
+    .nav__link {
+        display: block;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+    }
+    .nav__link a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+    .hamburger {
+        display: none;
     }
 }
 
-@media (max-width: 767px) {
-    .header-carousel .header-carousel-item {
-        height: 950px;
+@media only screen and (max-width: 767px) {
+    .hero-section_right img {
+        display: flex;
+        flex-direction: column;
     }
-
-    .header-carousel .owl-nav .owl-prev {
-        bottom: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-left: -45px;
+    .hero-section,
+    .main-content_cards {
+        display: flex;
+        flex-direction: column;
     }
-
-    .header-carousel .owl-nav .owl-next {
-        bottom: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-left: 45px;
+    .sub-title {
+        margin-top: 100x;
+    }
+    .main-content_cards {
+        margin: 50px;
+    }
+    .hero-section,
+    .hero-section_right {
+        width: 100%;
+        overflow: visible;
+        margin-bottom: 30rem;
     }
 }
-/*** Carousel Hero Header End ***/

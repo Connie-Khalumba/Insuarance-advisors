@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Cards</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="plans.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="/index.html">
+                <img style="width: 100px; height: 70px;" src="./assets/Blue_Pink_Badge_Simple_Medical_Clinic_Logo-removebg-preview.png" alt="">
+            </a>
+
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+ 
+            <div class="nav__link hide">
+              <a href="./index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="./contact.html">Contact</a>
+              <a href="./plans.html">Plans</a>
+              <a href="./signup.html">Login</a>
+          </div>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <form id="insurance-form">
+            <div class="form-group">
+                <label for="cover-type">You Need Cover For:</label>
+                <select id="cover-type" name="cover-type">
+                    <option value="individual">Individual Persons or Families</option>
+                    <option value="micro">Individual Persons or Families (Micro Cover)</option>
+                    <option value="children">Children</option>
+                    <option value="senior">Senior Citizens</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="age">Age of Principal</label>
+                <select id="age" name="age">
+                    <!-- Options for age -->
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="include-spouse" name="include-spouse">
+                <label for="include-spouse">Include Spouse?</label>
+            </div>
+            <div class="form-group">
+                <label for="children">Number of Children:</label>
+                <select id="children" name="children">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="inpatient-limit">Inpatient Limit (Per Family):</label>
+                <select id="inpatient-limit" name="inpatient-limit">
+                    <option value="500000">500,000</option>
+                    <option value="1000000">1,000,000</option>
+                    <option value="2000000">2,000,000</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Your Name (required)</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number (required)</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email Address (required)</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <h1>WE HAVE THE FOLLOWING MEDICAL COVER OPTIONS FOR YOU</h1>
+    
+        <div class="insurance-container">
+            <div class="insurance-card">
+                
+                <div class="card-header">
+                    <img src="./assets/Old-Mutual-Insure-Logo.jpg" alt="Old Mutual">
+                    <button class="read-details-btn">Read Cover Details</button>
+                </div>
+                <div class="card-body">
+                    <p><strong>Insurer:</strong> Old Mutual Kenya</p>
+                    <p><strong>Product Name:</strong> Afyaimara Family Cover</p>
+                    <p><strong>Medical Cover For:</strong> Individual Persons or Families</p>
+                    <p><strong>Inpatient Limit Per Family:</strong> 500,000</p>
+                </div>
+                <form class="card-inputs">
+                    <div class="form-group">
+                        <label for="outpatient-cover-type">Outpatient Cover Type:</label>
+                        <select id="outpatient-cover-type" name="outpatient-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="outpatient-limit">Outpatient Limit:</label>
+                        <input type="number" id="outpatient-limit" name="outpatient-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="maternity-limit">Maternity Limit:</label>
+                        <input type="number" id="maternity-limit" name="maternity-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="dental-cover-type">Dental Cover Type:</label>
+                        <select id="dental-cover-type" name="dental-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="dental-limit">Dental Limit:</label>
+                        <input type="number" id="dental-limit" name="dental-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="optical-cover-type">Optical Cover Type:</label>
+                        <select id="optical-cover-type" name="optical-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="optical-limit">Optical Limit:</label>
+                        <input type="number" id="optical-limit" name="optical-limit" min="0">
+                    </div>
+                </form>
+                <div class="card-footer">
+                    <p><strong>Total Annual Premium:</strong> 34,055</p>
+                    <button class="select-cover-btn">Select this Cover</button>
+                </div>
+            </div>
+                
+            
+            <div class="insurance-card">
+                
+                <div class="card-header">
+                    <img src="./assets/apa.jfif" alt="APA Insurance">
+                    <button class="read-details-btn">Read Cover Details</button>
+                </div>
+                <div class="card-body">
+                    <p><strong>Insurer:</strong> APA Insurance</p>
+                    <p><strong>Product Name:</strong> Health Shield Cover</p>
+                    <p><strong>Medical Cover For:</strong> Individual Persons</p>
+                    <p><strong>Inpatient Limit Per Person:</strong> 400,000</p>
+                </div>
+                <form class="card-inputs">
+                    <div class="form-group">
+                        <label for="outpatient-cover-type">Outpatient Cover Type:</label>
+                        <select id="outpatient-cover-type" name="outpatient-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="outpatient-limit">Outpatient Limit:</label>
+                        <input type="number" id="outpatient-limit" name="outpatient-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="maternity-limit">Maternity Limit:</label>
+                        <input type="number" id="maternity-limit" name="maternity-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="dental-cover-type">Dental Cover Type:</label>
+                        <select id="dental-cover-type" name="dental-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="dental-limit">Dental Limit:</label>
+                        <input type="number" id="dental-limit" name="dental-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="optical-cover-type">Optical Cover Type:</label>
+                        <select id="optical-cover-type" name="optical-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="optical-limit">Optical Limit:</label>
+                        <input type="number" id="optical-limit" name="optical-limit" min="0">
+                    </div>
+                </form>
+                <div class="card-footer">
+                    <p><strong>Total Annual Premium:</strong> 29,404</p>
+                    <button class="select-cover-btn">Select this Cover</button>
+                </div>
+            </div>
+                
+            </div>
+
+            <div class="insurance-card">
+                <div class="card-header">
+                    <img src="./assets/AAR.png" alt="AAR Insurance">
+                    <button class="read-details-btn">Read Cover Details</button>
+                </div>
+                <div class="card-body">
+                    <p><strong>Insurer:</strong> AAR Insurance</p>
+                    <p><strong>Product Name:</strong> Health Shield Cover</p>
+                    <p><strong>Medical Cover For:</strong> Individual Persons</p>
+                    <p><strong>Inpatient Limit Per Person:</strong> 400,000</p>
+                </div>
+                <form class="card-inputs">
+                    <div class="form-group">
+                        <label for="outpatient-cover-type">Outpatient Cover Type:</label>
+                        <select id="outpatient-cover-type" name="outpatient-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="outpatient-limit">Outpatient Limit:</label>
+                        <input type="number" id="outpatient-limit" name="outpatient-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="maternity-limit">Maternity Limit:</label>
+                        <input type="number" id="maternity-limit" name="maternity-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="dental-cover-type">Dental Cover Type:</label>
+                        <select id="dental-cover-type" name="dental-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="dental-limit">Dental Limit:</label>
+                        <input type="number" id="dental-limit" name="dental-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="optical-cover-type">Optical Cover Type:</label>
+                        <select id="optical-cover-type" name="optical-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="optical-limit">Optical Limit:</label>
+                        <input type="number" id="optical-limit" name="optical-limit" min="0">
+                    </div>
+                </form>
+                <div class="card-footer">
+                    <p><strong>Total Annual Premium:</strong> 29,404</p>
+                    <button class="select-cover-btn">Select this Cover</button>
+                </div>
+            </div>
+                
+            
+
+            <div class="insurance-card">
+                <div class="card-header">
+                    <img src="./assets/cic.png" alt="CIC Insurance">
+                    <button class="read-details-btn">Read Cover Details</button>
+                </div>
+                <div class="card-body">
+                    <p><strong>Insurer:</strong> CIC Insurance</p>
+                    <p><strong>Product Name:</strong> Health Shield Cover</p>
+                    <p><strong>Medical Cover For:</strong> Individual Persons</p>
+                    <p><strong>Inpatient Limit Per Person:</strong> 400,000</p>
+                </div>
+                <form class="card-inputs">
+                    <div class="form-group">
+                        <label for="outpatient-cover-type">Outpatient Cover Type:</label>
+                        <select id="outpatient-cover-type" name="outpatient-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="outpatient-limit">Outpatient Limit:</label>
+                        <input type="number" id="outpatient-limit" name="outpatient-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="maternity-limit">Maternity Limit:</label>
+                        <input type="number" id="maternity-limit" name="maternity-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="dental-cover-type">Dental Cover Type:</label>
+                        <select id="dental-cover-type" name="dental-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="dental-limit">Dental Limit:</label>
+                        <input type="number" id="dental-limit" name="dental-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="optical-cover-type">Optical Cover Type:</label>
+                        <select id="optical-cover-type" name="optical-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="optical-limit">Optical Limit:</label>
+                        <input type="number" id="optical-limit" name="optical-limit" min="0">
+                    </div>
+                </form>
+                <div class="card-footer">
+                    <p><strong>Total Annual Premium:</strong> 29,404</p>
+                    <button class="select-cover-btn">Select this Cover</button>
+                </div>
+            </div>
+               
+            
+
+            <div class="insurance-card">
+                <div class="card-header">
+                    <img src="./assets/jubilee.png" alt="jubilee Insurance">
+                    <button class="read-details-btn">Read Cover Details</button>
+                </div>
+                <div class="card-body">
+                    <p><strong>Insurer:</strong> Jubilee Insurance</p>
+                    <p><strong>Product Name:</strong> Health Shield Cover</p>
+                    <p><strong>Medical Cover For:</strong> Individual Persons</p>
+                    <p><strong>Inpatient Limit Per Person:</strong> 400,000</p>
+                </div>
+                <form class="card-inputs">
+                    <div class="form-group">
+                        <label for="outpatient-cover-type">Outpatient Cover Type:</label>
+                        <select id="outpatient-cover-type" name="outpatient-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="outpatient-limit">Outpatient Limit:</label>
+                        <input type="number" id="outpatient-limit" name="outpatient-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="maternity-limit">Maternity Limit:</label>
+                        <input type="number" id="maternity-limit" name="maternity-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="dental-cover-type">Dental Cover Type:</label>
+                        <select id="dental-cover-type" name="dental-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="dental-limit">Dental Limit:</label>
+                        <input type="number" id="dental-limit" name="dental-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="optical-cover-type">Optical Cover Type:</label>
+                        <select id="optical-cover-type" name="optical-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="optical-limit">Optical Limit:</label>
+                        <input type="number" id="optical-limit" name="optical-limit" min="0">
+                    </div>
+                </form>
+                <div class="card-footer">
+                    <p><strong>Total Annual Premium:</strong> 29,404</p>
+                    <button class="select-cover-btn">Select this Cover</button>
+                </div>
+            </div>
+                
+
+            <div class="insurance-card">
+                <div class="card-header">
+                    <img src="./assets/download.png" alt="BRITAM Insurance">
+                    <button class="read-details-btn">Read Cover Details</button>
+                </div>
+                <div class="card-body">
+                    <p><strong>Insurer:</strong> BRITAM Insurance</p>
+                    <p><strong>Product Name:</strong> Health Shield Cover</p>
+                    <p><strong>Medical Cover For:</strong> Individual Persons</p>
+                    <p><strong>Inpatient Limit Per Person:</strong> 400,000</p>
+                </div>
+                <form class="card-inputs">
+                    <div class="form-group">
+                        <label for="outpatient-cover-type">Outpatient Cover Type:</label>
+                        <select id="outpatient-cover-type" name="outpatient-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="outpatient-limit">Outpatient Limit:</label>
+                        <input type="number" id="outpatient-limit" name="outpatient-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="maternity-limit">Maternity Limit:</label>
+                        <input type="number" id="maternity-limit" name="maternity-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="dental-cover-type">Dental Cover Type:</label>
+                        <select id="dental-cover-type" name="dental-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="dental-limit">Dental Limit:</label>
+                        <input type="number" id="dental-limit" name="dental-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="optical-cover-type">Optical Cover Type:</label>
+                        <select id="optical-cover-type" name="optical-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="optical-limit">Optical Limit:</label>
+                        <input type="number" id="optical-limit" name="optical-limit" min="0">
+                    </div>
+                </form>
+            
+                <div class="card-footer">
+                    <p><strong>Total Annual Premium:</strong> 29,404</p>
+                    <button class="select-cover-btn">Select this Cover</button>
+                </div>
+            </div>
+
+            <div class="insurance-card">
+                <div class="card-header">
+                    <img src="./assets/download.jfif" alt="Heritage Insurance">
+                    <button class="read-details-btn">Read Cover Details</button>
+                </div>
+                <div class="card-body">
+                    <p><strong>Insurer:</strong> HERITAGE Insurance</p>
+                    <p><strong>Product Name:</strong> Health Shield Cover</p>
+                    <p><strong>Medical Cover For:</strong> Individual Persons</p>
+                    <p><strong>Inpatient Limit Per Person:</strong> 400,000</p>
+                </div>
+                <form class="card-inputs">
+                    <div class="form-group">
+                        <label for="outpatient-cover-type">Outpatient Cover Type:</label>
+                        <select id="outpatient-cover-type" name="outpatient-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="outpatient-limit">Outpatient Limit:</label>
+                        <input type="number" id="outpatient-limit" name="outpatient-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="maternity-limit">Maternity Limit:</label>
+                        <input type="number" id="maternity-limit" name="maternity-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="dental-cover-type">Dental Cover Type:</label>
+                        <select id="dental-cover-type" name="dental-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="dental-limit">Dental Limit:</label>
+                        <input type="number" id="dental-limit" name="dental-limit" min="0">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="optical-cover-type">Optical Cover Type:</label>
+                        <select id="optical-cover-type" name="optical-cover-type">
+                            <option value="per-family">Per Family</option>
+                            <option value="per-person">Per Person</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="optical-limit">Optical Limit:</label>
+                        <input type="number" id="optical-limit" name="optical-limit" min="0">
+                    </div>
+                </form>
+            
+                <div class="card-footer">
+                    <p><strong>Total Annual Premium:</strong> 29,404</p>
+                    <button class="select-cover-btn">Select this Cover</button>
+                </div>
+            </div>
+            <!-- Add more insurance-card divs as needed -->
+        </div>
+    </div>
+</body>
+</html>

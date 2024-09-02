@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Ensure everything stacks vertically */
+    align-items: center;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 30px; /* Space between form and cards */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #8B0000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #A52A2A;
+}
+
+.insurance-container {
+    width: 100%;
+    max-width: 800px; /* Ensure it matches the form container width */
+}
+
+.insurance-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 20px; /* Added padding to accommodate the form */
+}
+
+.card-inputs {
+    margin-top: 20px; /* Space above the input fields */
+}
+
+.card-inputs .form-group {
+    margin-bottom: 15px;
+}
+
+.card-inputs .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.card-inputs .form-group input,
+.card-inputs .form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.card-header {
+    background-color: #E0E0E0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header img {
+    width: 100px;
+}
+
+.read-details-btn {
+    background-color: #006400;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.card-footer {
+    background-color: #F5F5F5;
+    padding: 15px;
+    text-align: center;
+}
+
+.select-cover-btn {
+    background-color: #8B0000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
