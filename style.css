@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #59d7da;
+    background-color: #064453;
     position: fixed;
     top: 0;
     left: 0;
@@ -55,7 +55,7 @@ a {
     position: fixed;
     width: 100%;
     top: 5.5rem;
-    background-color: #01a2a8;
+    background-color: #050125;
 }
 
 .nav__link a {
@@ -112,7 +112,7 @@ a {
 }
 
 .hero-section_left>button {
-    background-color: #01a2a8;
+    background-color: #050125;
     padding: 0.8rem 1.5rem;
     border-radius: 9999px;
     color: white;

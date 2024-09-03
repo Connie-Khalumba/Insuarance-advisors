@@ -65,13 +65,63 @@ body {
 }
 
 .insurance-card {
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
     border-radius: 10px;
-    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 150px;
     margin-bottom: 20px;
-    padding: 20px; /* Added padding to accommodate the form */
-}
+  }
+
+  .btn-select-cover {
+    background-color: #8B0000;
+  }
+  
+  .insurance-details, .coverage-options, .premium-details {
+    background-color: #E0E7FF;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .insurance-details p, .premium-details p {
+    margin: 10px 0;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input, .form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .btn-read-details, .btn-select-cover {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 
 .card-inputs {
     margin-top: 20px; /* Space above the input fields */

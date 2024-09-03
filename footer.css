@@ -18,7 +18,7 @@ body {
 }
 
 .footer {
-  background-color: #073961;
+  background-color: #064453;
   padding: 80px 0;
 }
 
@@ -55,7 +55,7 @@ ul {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #e78f22;
+  background-color: rgb(160, 24, 223);
   width: 50px;
   height: 2px;
 }
