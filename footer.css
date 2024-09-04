@@ -18,8 +18,8 @@ body {
 }
 
 .footer {
-  background-color: #064453;
-  padding: 80px 0;
+  background-color: #064453;  /* Dark background for footer */
+  padding: 60px 0;  /* Adjusted padding for better spacing */
 }
 
 .container {
@@ -30,6 +30,7 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;  /* Space out columns evenly */
 }
 
 ul {
@@ -37,15 +38,16 @@ ul {
 }
 
 .footer-col {
-  width: 25%;
+  width: 22%;  /* Adjusted width for better spacing between columns */
   padding: 0 15px;
+  margin-bottom: 30px;  /* Add some margin for spacing in small screens */
 }
 
 .footer-col h4 {
   font-size: 18px;
   color: #FFF;
   text-transform: capitalize;
-  margin-bottom: 35px;
+  margin-bottom: 20px;  /* Slightly reduced bottom margin */
   font-weight: 500;
   position: relative;
 }
@@ -55,7 +57,7 @@ ul {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: rgb(160, 24, 223);
+  background-color: #A018DF;  /* Adjusted color for underline */
   width: 50px;
   height: 2px;
 }
@@ -67,7 +69,7 @@ ul {
 .footer-col ul li a {
   color: #DDD;
   display: block;
-  font-size: 1rem;
+  font-size: 0.9rem;  /* Slightly smaller font size */
   font-weight: 300;
   text-transform: capitalize;
   text-decoration: none;
@@ -76,7 +78,7 @@ ul {
 
 .footer-col ul li a:hover {
   color: #FFF;
-  padding-left: 7px;
+  padding-left: 5px;  /* Reduced padding for smoother hover effect */
 }
 
 .footer-col .social-links a {
@@ -97,15 +99,16 @@ ul {
   background-color: #FFF;
 }
 
+/* Responsive Adjustments */
 @media(max-width: 767px) {
   .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
+    width: 48%;  /* Take up half width on smaller screens */
   }
 }
 
 @media(max-width: 574px) {
   .footer-col {
-    width: 100%;
+    width: 100%;  /* Full width on very small screens */
+    margin-bottom: 20px;
   }
 }

@@ -1,137 +1,86 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:"poppins",sans-serif;
-}
 body{
-  background-color: #c9d6ff;
-  background:linear-gradient(to right,#e2e2e2,#c9d6ff);
+  justify-content: center;
+  min-height: 100vh;
+  background: url(./assets/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.container{
+
+#main > h1 {
+  margin-bottom: 8%;
+  text-align: center;
+  color: #881697;
+  letter-spacing: 0.1em;
+}
+
+.p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+}
+
+.p span {
   background:#fff;
-  width:450px;
-  padding:1.5rem;
-  margin:50px auto;
-  border-radius:10px;
-  box-shadow:0 20px 35px rgba(0,0,1,0.9);
+  padding:0 10px;
 }
-form{
-  margin:0 2rem;
-}
-.form-title{
-  font-size:1.5rem;
-  font-weight:bold;
-  text-align:center;
-  padding:1.3rem;
-  margin-bottom:0.4rem;
-}
-input{
-  color:inherit;
-  width:100%;
-  background-color:transparent;
-  border:none;
-  border-bottom:1px solid #757575;
-  padding-left:1.5rem;
-  font-size:15px;
-}
-.input-group{
-  padding:1% 0;
-  position:relative;
 
+input {
+  margin-bottom: 3%;
 }
-.input-group i{
-  position:absolute;
-  color:black;
-}
-input:focus{
-  background-color: transparent;
-  outline:transparent;
-  border-bottom:2px solid hsl(327,90%,28%);
-}
-input::placeholder{
-  color:transparent;
-}
-label{
-  color:#757575;
-  position:relative;
-  left:1.2em;
-  top:-1.3em;
-  cursor:auto;
-  transition:0.3s ease all;
-}
-input:focus~label,input:not(:placeholder-shown)~label{
-  top:-3em;
-  color:hsl(327,90%,28%);
-  font-size:15px;
-}
-.recover{
-  text-align:right;
-  font-size:1rem;
-  margin-bottom:1rem;
 
+input:last-of-type {
+  margin-bottom: 0;
 }
-.recover a{
-  text-decoration:none;
-  color:rgb(125,125,235);
+
+input, button {
+  padding: 3%;
+  width: 100%;
 }
-.recover a:hover{
-  color:blue;
-  text-decoration:underline;
+
+.login-container {
+  background: transparent;
+  padding: 5%;
+  border: 2px solid rgba(255, 255, 255, .5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  width: 40vw;
+  margin: auto;
+  height: 70vh;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
 }
-button{
-  font-size:1.1rem;
-  padding:8px 0;
-  border-radius:5px;
-  outline:none;
-  border:none;
-  width:100%;
-  background:rgb(125,125,235);
-  color:white;
-  cursor:pointer;
-  transition:0.9s;
+
+#submit, #create-acct-btn {
+  background-color: #060b1f;;
+  color: white;
+  border: none;
+  margin-top: 5%;
 }
-button:hover{
-  background:#07001f;
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
 }
-.or{
-  font-size:1.1rem;
-  margin-top:0.5rem;
-  text-align:center;
+
+#sign-up {
+  border-radius: 20px;
+  border: none;
+  background-color: #881697;
 }
-.icons{
-  text-align:center;
+
+#create-acct {
+  display: none;
 }
-.icons i{
-  color:rgb(125,125,235);
-  padding:0.8rem 1.5rem;
-  border-radius:10px;
-  font-size:1.5rem;
-  cursor:pointer;
-  border:2px solid #dfe9f5;
-  margin:0 15px;
-  transition:1s;
+
+#return-btn {
+  background: none;
+  color: grey;
+  text-decoration: underline;
+  border: none;
+  margin-top: 3%;
 }
-.icons i:hover{
-  background:#07001f;
-  font-size:1.6rem;
-  border:2px solid rgb(125,125,235);
-}
-.links{
-  display:flex;
-  justify-content:space-around;
-  padding:0 4rem;
-  margin-top:0.9rem;
-  font-weight:bold;
-}
-#signUpButton, #signInButton{
-  color:rgb(125,125,235);
-  border:none;
-  background-color:transparent;
-  font-size:1rem;
-  font-weight:bold;
-}
-#signUpButton:hover, #signInButton:hover {
-  text-decoration:underline;
-  color:blue;
-} 

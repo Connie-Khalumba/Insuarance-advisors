@@ -1,99 +1,104 @@
-* {
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+html,
+body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%; /* 10px base for rem calculations */
+    font-size: 10px;
 }
 
-body {
-    font-family: sans-serif;
-}
-
-header {
-    background-color: #064453;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    /* padding: 1rem 2rem; */
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    /* text-transform: uppercase; */
-}
-
-
-/* nav styles */
-
+/* Navbar Section */
 .nav {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-}
-
-.hamburger {
-    padding-right: 20px;
-    cursor: pointer;
-}
-
-.hamburger .line {
-    display: block;
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background-color: white;
-}
-
-.nav__link {
+    width: 100%;
+    height: 65px;
     position: fixed;
-    width: 100%;
-    top: 5.5rem;
-    background-color: #050125;
-}
-
-.nav__link a {
-    display: block;
+    line-height: 65px;
     text-align: center;
-    padding: 10px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.4s ease;
 }
 
-.nav__link a:hover {
-    color: #0c2344;
+.nav div.logo {
+    float: left;
+    padding-left: 3rem;
 }
 
-.hide {
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav div.logo a:hover {
+    color: #00b0e6;
+}
+
+.nav div.main_list {
+    float: right;
+    height: 65px;
+}
+
+.nav div.main_list ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 65px;
+}
+
+.nav div.main_list ul li {
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 65px;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #00c4e6;
+}
+
+/* Hamburger Menu for Mobile */
+.navTrigger {
     display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
 }
 
-
-/******************************************************/
-
-
-/************** Hero Section Styles *******************/
-
-
-/******************************************************/
-
-.main::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
+.navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    display: block;
     width: 100%;
-    z-index: -1;
-    filter: blur(90px);
-    height: 100%;
-    background: url(./assets/health-medical-insurance-illustration-concept-isolated-people-patients-doctors_109722-583.avif) no-repeat center;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+}
+
+/* Home Section */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80');
+    background-position: center top;
     background-size: cover;
 }
 
+/* Hero Section */
 .hero-section {
     display: flex;
     justify-content: space-between;
@@ -107,56 +112,27 @@ a {
     margin-left: 10px;
     margin-top: 4rem;
     border-radius: 20px;
-    /* background-color: red; */
     padding: 20px;
 }
 
-.hero-section_left>button {
-    background-color: #050125;
-    padding: 0.8rem 1.5rem;
-    border-radius: 9999px;
-    color: white;
-    font-weight: 600;
-    border: none;
-}
-
-.hero-section_left>h1 {
-    /* background-color: #01a2a8;
-   */
+.hero-section_left h1 {
     margin-top: 2rem;
     margin-bottom: 1.5rem;
     font-size: 2rem;
 }
 
-.hero-section_left>p {
+.hero-section_left p {
     width: 60%;
     line-height: 1.9rem;
 }
 
-.get-started {
-    margin-top: 2.5rem;
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-}
-
-.get-started>a>button,
-.how-works>button {
-    background-color: #01a2a8;
+.hero-section_left button {
+    background-color: #0e0552;
     padding: 0.8rem 1.5rem;
     border-radius: 9999px;
     color: white;
     font-weight: 600;
     border: none;
-    cursor: pointer;
-}
-
-.get-started>a>button:hover,
-.how-works>button:hover {
-    background-color: white;
-    color: #01a2a8;
-    font-weight: 600;
-    border: 1px solid #01a2a8;
 }
 
 .hero-section_right {
@@ -171,21 +147,19 @@ a {
     margin-bottom: 20px;
 }
 
+/* Main Content */
 .main-content {
     width: 90%;
-    margin: auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin: 3rem auto;
+    text-align: center;
 }
 
-.main-content > h1 {
-    text-align: center;
+.main-content h1 {
     color: #01a2a8;
     font-weight: bold;
 }
 
-.main-content > p {
-    text-align: center;
+.main-content p {
     margin-top: 1rem;
 }
 
@@ -196,82 +170,183 @@ a {
     flex-wrap: wrap;
 }
 
-.main-content_cards>div>h1 {
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.main-content_cards>div>p {
-    margin-bottom: 1rem;
-    line-height: 1.5rem;
-    text-align: center;
-}
-
-.main-content_cards>div>.fa-home,
-.fa-mobile,
-.fa-envelope-open {
-    font-size: 2rem;
-    margin: auto;
-    color: #01a2a8;
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-}
-
-.card {
-    /* margin: 2rem; */
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    /* width: auto; */
+.main-content_cards > div {
     width: 30%;
     margin-bottom: 50px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #064453;
+    text-align: center;
 }
 
-.card:hover {
+.main-content_cards > div:hover {
     opacity: 0.9;
     transition: 0.3s;
     background-color: #881697;
     color: white;
 }
 
-@media screen and (min-width: 600px) {
-    .nav__link {
-        display: block;
-        position: static;
-        width: auto;
-        margin-right: 20px;
-        background: none;
-    }
-    .nav__link a {
-        display: inline-block;
-        padding: 15px 20px;
-    }
-    .hamburger {
-        display: none;
+.main-content_cards h1 {
+    margin-bottom: 1rem;
+}
+
+.main-content_cards p {
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.main-content_cards .fa-home,
+.fa-mobile,
+.fa-envelope-open {
+    font-size: 2rem;
+    color: #01a2a8;
+    margin-bottom: 1rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+    .navTrigger {
+        display: block;
+    }
+    
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color: #111;
+        background-position: center top;
+    }
+    
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    
+    .nav div.main_list ul li a {
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .hero-section,
+    .main-content_cards {
+        flex-direction: column;
+    }
+    
     .hero-section_right img {
         display: flex;
         flex-direction: column;
     }
-    .hero-section,
-    .main-content_cards {
-        display: flex;
-        flex-direction: column;
-    }
-    .sub-title {
-        margin-top: 100x;
-    }
-    .main-content_cards {
-        margin: 50px;
-    }
+    
     .hero-section,
     .hero-section_right {
         width: 100%;
-        overflow: visible;
         margin-bottom: 30rem;
+    }
+    
+    .main-content_cards {
+        margin: 50px;
+    }
+}
+
+/* Animations */
+.navTrigger.active i:nth-child(1) {
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    animation: inBtm 0.8s forwards;
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+/* Scroll Affix */
+.affix {
+    padding: 0;
+    background-color: #064453;
+}
+
+/* Hero Section Background Blur */
+.main::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(90px);
+    background: url('./assets/health-medical-insurance-illustration-concept-isolated-people-patients-doctors_109722-583.avif') no-repeat center;
+    background-size: cover;
+}
+
+/* Text Styles */
+.myH2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.myP {
+    text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 20px;
+}
+
+@media all and (max-width: 700px) {
+    .myP {
+        padding: 2%;
     }
 }
