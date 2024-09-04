@@ -112,7 +112,7 @@ submitButton.addEventListener("click", function () {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         window.alert("Success! Welcome back!");
-        window.location = "./destinations/destination.html";
+        window.location = "./plans.html";
       })
       .catch((error) => {
         console.error("Error Code:", error.code);

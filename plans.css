@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background: url(./assets/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg) no-repeat;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     display: flex;
     flex-direction: column; /* Ensure everything stacks vertically */
     align-items: center;
@@ -11,7 +11,8 @@ body {
 .form-container {
     width: 100%;
     max-width: 800px;
-    margin-bottom: 30px; /* Space between form and cards */
+    margin-top: 7vh;
+    margin-bottom: 7vh; /* Space between form and cards */
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
