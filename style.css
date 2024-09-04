@@ -6,7 +6,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
-    font-size: 62.5%; /* 10px base for rem calculations */
+    font-size: 15px; /* 10px base for rem calculations */
     font-size: 10px;
 }
 
