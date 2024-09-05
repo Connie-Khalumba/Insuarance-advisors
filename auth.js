@@ -91,32 +91,4 @@ returnBtn.addEventListener("click", () => {
   createacct.style.display = "none";
 });
 
-// Function to collect form data and send it to Firestore
-async function handleSelectCover(cardId) {
-  const card = document.getElementById(cardId);
-  const data = {
-    outpatientCoverType: card.querySelector(`#outpatient-cover-type-${cardId}`).value,
-    outpatientLimit: card.querySelector(`#outpatient-limit-${cardId}`).value,
-    maternityLimit: card.querySelector(`#maternity-limit-${cardId}`).value,
-    dentalCoverType: card.querySelector(`#dental-cover-type-${cardId}`).value,
-    dentalLimit: card.querySelector(`#dental-limit-${cardId}`).value,
-    opticalCoverType: card.querySelector(`#optical-cover-type-${cardId}`).value,
-    opticalLimit: card.querySelector(`#optical-limit-${cardId}`).value,
-    cardId
-  };
 
-  try {
-    await addDoc(collection(firestore, "insuranceCovers"), data);
-    alert('Cover details saved successfully!');
-  } catch (e) {
-    console.error('Error adding document: ', e);
-  }
-}
-
-// Attach event listeners to "Select this Cover" buttons
-document.querySelectorAll('.btn-select-cover').forEach(button => {
-  button.addEventListener('click', () => {
-    const cardId = button.getAttribute('data-card-id');
-    handleSelectCover(cardId);
-  });
-});

@@ -61,8 +61,12 @@ body {
 }
 
 .insurance-container {
-    width: 100%;
+    width: 70%;
     max-width: 800px; /* Ensure it matches the form container width */
+    gap: 20px; /* Space between form and cards */
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .insurance-card {
@@ -115,7 +119,7 @@ body {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #05258b;
     color: white;
     border: none;
     border-radius: 5px;
