@@ -55,7 +55,7 @@ createacctbtn.addEventListener("click", () => {
   createUserWithEmailAndPassword(auth, signupEmail, signupPassword)
     .then(() => {
       alert("Success! Account created.");
-      window.location = "./destinations/destination.html";
+      window.location = "../html/plans.html";
     })
     .catch(error => {
       alert("Error occurred. Try again.");
@@ -71,7 +71,7 @@ submitButton.addEventListener("click", () => {
   signInWithEmailAndPassword(auth, email, password)
     .then(() => {
       alert("Success! Welcome back!");
-      window.location = "./plans.html";
+      window.location = "../html/plans.html";
     })
     .catch(error => {
       console.error("Error Code:", error.code);
