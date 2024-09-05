@@ -36,7 +36,7 @@ main {
 }
 
 form {
-    background-color: #49beb7;
+    background-color: #08306d;
     padding: 2em;
     border-radius: 15px;
     text-align: left;
@@ -95,7 +95,7 @@ h2 {
     width: 97%;
     max-width: 97%;
     border: 1px solid black;
-    box-shadow: 4px 4px 20px #085f63;
+    box-shadow: 4px 4px 20px #08306d;
     font-size: inherit;
     padding: .8em;
     border-radius: 10px;
@@ -109,7 +109,7 @@ h2 {
     font-size: 1.5em;
     border: none; 
     border-radius: 15px;
-    background-color: #ff5959;
+    background-color: #610c0c;
     font-weight: bold;
 }
 
@@ -123,7 +123,7 @@ footer {
         width: 55%;
         display: block;
         margin: 1em auto;
-        box-shadow: 4px 4px 20px #085f63, -3px -3px 20px #085f63;
+        box-shadow: 4px 4px 20px #08306d, -3px -3px 20px #085f63;
     }
 
     #description {

@@ -10,27 +10,28 @@
     <link rel="stylesheet" href="footer.css">
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <a href="/index.html">
-                <img style="width: 100px; height: 70px;" src="./assets/Blue_Pink_Badge_Simple_Medical_Clinic_Logo-removebg-preview.png" alt="">
-            </a>
-
-            <div class="hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">CK</a>
             </div>
-
-            <div class="nav__link hide">
-                <a href="./index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="./contact.html">Contact</a>
-                <a href="./plans.html">Plans</a>
-                <a href="./signup.html">Login</a>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <li><a href="./plans.html">Services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./signup.html">sign Up</a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
     <div id="main">
         
         <main>
@@ -103,8 +104,65 @@
                 </form>
         </main>
     </div>
-        <footer>
-            <em>This survey was created by Ihor Nahnybida for freecodecamp's "Survey form" project</em>
-        </footer>
+    <footer class="footer">
+        <div class="container row">
+            <div class="footer-col">
+                <h4>ConHealth</h4>
+                <ul>
+                    <li><a href="./html/about.html">About us</a></li>
+                    <li><a href="./html/tours.html">Our services</a></li>
+                    <li><a href="./assets/TuzuruAfrica privacy policy.pdf">Privacy policy</a></li>
+                    <li><a href="./index.html">Visit website</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="./assets/FAQs Tuzuru.png">FAQ</a></li>
+                    <li><a href="./assets/Travel package.png">Bookings</a></li>
+                    <li><a href="./assets/Return policy.pdf">Returns</a></li>
+                    <li><a href="#">Order status</a></li>
+                    <li><a href="#">Payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Various Insurance Cover</h4>
+                <ul>
+                    <li><a href="#">Health Insurance</a></li>
+                    <li><a href="#">Life Insurance</a></li>
+                    <li><a href="#">Education Cover</a></li>
+                    <li><a href="#">Car and Motor</a></li>
+                    <li><a href="#">Retirement</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Additional Scripts -->
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    <script src="main.js"></script>
 </body>
 </html>
