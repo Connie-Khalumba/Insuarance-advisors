@@ -2,7 +2,7 @@
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)), url(./assets/health-insurance-concept-idea-security-protection-property-life-from-damage-healthcare-medical-service-isolated-flat-vector-illustration_613284-336.jpg);
+    background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)), url(../assets/health-insurance-concept-idea-security-protection-property-life-from-damage-healthcare-medical-service-isolated-flat-vector-illustration_613284-336.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -221,7 +221,7 @@
 /*** FAQs Start ***/
 .faq-section .accordion .accordion-item .accordion-header .accordion-button {
     color: var(--bs-white);
-    background: #064453;
+    background: #063053;
     font-size: 18px;
 }
 

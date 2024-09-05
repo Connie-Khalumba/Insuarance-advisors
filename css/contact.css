@@ -30,7 +30,7 @@
 .left-col {
   width: 45vw;
   height: 100%;
-  background-image: url("./assets/stethoscope-with-neon-heart-rate-pulses-hitech-healthcare-futuristic-medical-art_1245763-103513.avif");
+  background-image: url("../assets/stethoscope-with-neon-heart-rate-pulses-hitech-healthcare-futuristic-medical-art_1245763-103513.avif");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -48,7 +48,7 @@
 }
 
 h1, label, button, .description {
-  font-family: 'Jost', sans-serif;
+  font-family: 'poppins', sans-serif;
   font-weight: 400;
   letter-spacing: 0.1rem;
 }
@@ -88,7 +88,7 @@ input, textarea, label {
 }
 
 p, placeholder, input, textarea {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
 input::placeholder, textarea::placeholder {

@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: url(./assets/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg) no-repeat;
+    background: url(../assets/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg) no-repeat;
     margin: 0;
     padding: 0;
     display: flex;
@@ -165,7 +165,7 @@ body {
 }
 
 .read-details-btn {
-    background-color: #006400;
+    background-color: #002364;
     color: #fff;
     border: none;
     padding: 5px 10px;
